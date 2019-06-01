@@ -1,0 +1,2 @@
+[15-May-2019 06:42:29 UTC] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'bt_b2b'@'localhost' (using password: YES) in /home/q2tve6hf8s0e/public_html/nova_v1/bulk/novaconfig.php on line 24
+[15-May-2019 06:42:29 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, boolean given in /home/q2tve6hf8s0e/public_html/nova_v1/bulk/novaconfig.php on line 24

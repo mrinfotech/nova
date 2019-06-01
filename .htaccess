@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+        RewriteEngine On
+		RewriteCond %{HTTP_USER_AGENT} libwww-perl.*
+        RewriteRule .* - [F,L]
+	   RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
+RewriteCond %{HTTP_HOST} ^bt$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bt$
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
